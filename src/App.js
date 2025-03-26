@@ -55,7 +55,7 @@ function App() {
 
         {/* Filtro por etiquetas (usando un select dropdown) */}
         <div className="tag-filter">
-          <label htmlFor="tagSelect">Filtrar por etiqueta:</label>
+          <label htmlFor="tagSelect">Filtrar por etiqueta</label>
           <select
             id="tagSelect"
             value={tagFilter}

@@ -278,5 +278,47 @@
         "status": "jugando",
         "hoursPlayed": 8,
         "tags": ["Lego", "RPG"]
+    },
+    {
+        "id": 36,
+        "name": "Code Lyoko",
+        "image": "/img/portadas/portadaCodeLyoko.jpg",
+        "status": "terminado",
+        "hoursPlayed": 9,
+        "tags": ["RPG"]
+    },
+    {
+        "id": 37,
+        "name": "BeyBlade Metal Fusion",
+        "image": "/img/portadas/portadaBeyBlade.jpg",
+        "status": "terminado",
+        "hoursPlayed": 11,
+        "tags": ["RPG"]
+    },
+    {
+        "id": 38,
+        "name": "Bakugan: Battle Trainer",
+        "image": "/img/portadas/portadaBakuganBattleTrainer.jpeg",
+        "status": "terminado",
+        "hoursPlayed": 18,
+        "tags": ["RPG"]
+    },
+    {
+        "id": 39,
+        "name": "Hacknet",
+        "image": "/img/portadas/portadaHacknet.jpg",
+        "status": "terminado",
+        "hoursPlayed": 5,
+        "tags": ["Indie"]
+    },
+    {
+        "id": 40,
+        "name": "Omori",
+        "image": "/img/portadas/portadaOmori.jpg",
+        "status": "terminado",
+        "hoursPlayed": 30,
+        "tags": ["Indie"]
     }
+
+    
 ]
