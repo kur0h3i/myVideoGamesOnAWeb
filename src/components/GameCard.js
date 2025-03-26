@@ -2,7 +2,7 @@ import React from "react";
 import '../style/GameCard.css';  // Asegúrate de que los estilos estén importados
 
 function GameCard({ game }) {
-  const { name, image, status, hoursPlayed } = game;
+  const { name, image, status, hoursPlayed, tags} = game;
 
   // Determina la clase para el estado
   let  statusClass = "";

@@ -4,118 +4,224 @@
         "name": "Final Fantasy VII REMAKE INTEGRADE",
         "image": "/img/portadas/portadaFinalFantasyVII.jpg",
         "status": "jugando",
-        "hoursPlayed": 30
+        "hoursPlayed": 30,
+        "tags": ["Final Fantasy", "RPG"]
     },
     {
         "id": 2,
         "name": "Kingdom Hearts",
         "image": "/img/portadas/portadaKingdomHearts.jpg",
         "status": "terminado",
-        "hoursPlayed": 15
+        "hoursPlayed": 15,
+        "tags": ["Kingdom Hearts", "RPG"]
     },
     {
         "id": 3,
         "name": "Cars 2",
         "image": "/img/portadas/portadaCars2.jpg",
         "status": "terminado",
-        "hoursPlayed": 5
+        "hoursPlayed": 5,
+        "tags": ["Disney", "Carreras"]
     },
     {
         "id": 4,
         "name": "Fina Fantasy XVI",
         "image": "/img/portadas/portadaFinalFantasyXVI.jpg",
         "status": "terminado",
-        "hoursPlayed": 33
+        "hoursPlayed": 33,
+        "tags": ["Final Fantasy", "RPG"]
     },
     {
         "id": 5,
         "name": "Katana Zero",
         "image": "/img/portadas/portadaKatanaZero.jpg",
         "status": "terminado",
-        "hoursPlayed": 6
+        "hoursPlayed": 6,
+        "tags": ["Indie"]
     },
     {
         "id": 6,
         "name": "Pokemon Blanco",
         "image": "/img/portadas/portadaPokemonBlanco.jpeg",
         "status": "terminado",
-        "hoursPlayed": 22
+        "hoursPlayed": 22,
+        "tags": ["Pokemon", "RPG"]
     },
     {
         "id": 7,
         "name": "Portal",
         "image": "/img/portadas/portadaPortal.jpg",
         "status": "terminado",
-        "hoursPlayed": 2
+        "hoursPlayed": 2,
+        "tags": ["RPG"]
     },
     {
         "id": 8,
         "name": "Elden Ring",
         "image": "/img/portadas/portadaEldenRing.jpg",
         "status": "jugando",
-        "hoursPlayed": 140
+        "hoursPlayed": 140,
+        "tags": ["Souls Like", "RPG"]
     },
     {
         "id": 9,
         "name": "Kingdom Hearts II",
         "image": "/img/portadas/portadaKingdomHeartsII.png",
         "status": "jugando",
-        "hoursPlayed": 19
+        "hoursPlayed": 19,
+        "tags": ["Kingdom Hearts", "RPG"]
     },
     {
         "id": 10,
         "name": "Sekiro",
         "image": "/img/portadas/portadaSekiro.jpg",
         "status": "jugando",
-        "hoursPlayed": 2
+        "hoursPlayed": 2,
+        "tags": ["Souls Like", "RPG"]
     },
     {
         "id": 11,
         "name": "Final Fantasy X",
         "image": "/img/portadas/portadaFinalFantasyX.jpg",
         "status": "jugando",
-        "hoursPlayed": 7
+        "hoursPlayed": 7,
+        "tags": ["Final Fantasy", "RPG"]
     },
     {
         "id": 12,
         "name": "Final Fantasy XII",
         "image": "/img/portadas/portadaFinalFantasyXII.jpg",
         "status": "jugando",
-        "hoursPlayed": 8
+        "hoursPlayed": 8,
+        "tags": ["Final Fantasy", "RPG"]
     },
     {
         "id": 13,
         "name": "League of Legends",
         "image": "/img/portadas/portadaLol.jpg",
         "status": "locura",
-        "hoursPlayed": 3416
+        "hoursPlayed": 3416,
+        "tags": ["Multiplayer"]
     },
     {
         "id": 14,
         "name": "World of Warcraft",
         "image": "/img/portadas/portadaWow.jpg",
         "status": "locura",
-        "hoursPlayed": 210
+        "hoursPlayed": 210,
+        "tags": ["MMO"]
     },
     {
         "id": 15,
         "name": "Dokkan Battle",
         "image": "/img/portadas/portadaDokkanBattle.jpg",
         "status": "locura",
-        "hoursPlayed": 6234
+        "hoursPlayed": 6234,
+        "tags": ["Anime"]
     },
     {
         "id": 16,
         "name": "Minecraft",
         "image": "/img/portadas/portadaMinecraft.jpg",
         "status": "locura",
-        "hoursPlayed": 5342
+        "hoursPlayed": 5342,
+        "tags": ["RPG"]
     },
     {
         "id": 17,
         "name": "Asseto Corsa",
-        "image": "/img/portadas/portadaadAssetoCorsa.jpg",
+        "image": "/img/portadas/portadaAssetoCorsa.jpg",
         "status": "locura",
-        "hoursPlayed": 200
+        "hoursPlayed": 200,
+        "tags": ["Carreras"]
+    },
+    {
+        "id": 18,
+        "name": "Final Fantasy VII REBIRTH",
+        "image": "/img/portadas/portadaFinalFantasyVIIRebirth.jpg",
+        "status": "jugando",
+        "hoursPlayed": 0,
+        "tags": ["Final Fantasy", "RPG"]
+    },
+    {
+        "id": 19,
+        "name": "Kingdom Hearts III",
+        "image": "/img/portadas/portadaKingdomHeartsIII.jpg",
+        "status": "jugando",
+        "hoursPlayed": 0,
+        "tags": ["Kingdom Hearts", "RPG"]
+    },
+    {
+        "id": 20,
+        "name": "DmC: Devil May Cry",
+        "image": "/img/portadas/portadaDMC.jpg",
+        "status": "jugando",
+        "hoursPlayed": 0,
+        "tags": ["RPG"]
+    },
+    {
+        "id": 21,
+        "name": "Pokemon Esmeralda",
+        "image": "/img/portadas/portadaPokemonEsmeralda.jpg",
+        "status": "terminado",
+        "hoursPlayed": 33,
+        "tags": ["Pokemon", "RPG"]
+    },
+    {
+        "id": 22,
+        "name": "Pokemon Diamante",
+        "image": "/img/portadas/portadaPokemonDiamante.jpg",
+        "status": "terminado",
+        "hoursPlayed": 32,
+        "tags": ["Pokemon", "RPG"]
+    },
+    {
+        "id": 23,
+        "name": "Pokemon Y",
+        "image": "/img/portadas/portadaPokemonY.jpg",
+        "status": "terminado",
+        "hoursPlayed": 29,
+        "tags": ["Pokemon", "RPG"]
+    },
+    {
+        "id": 24,
+        "name": "Pokemon Luna",
+        "image": "/img/portadas/portadaPokemonLuna.png",
+        "status": "terminado",
+        "hoursPlayed": 136,
+        "tags": ["Pokemon", "RPG"]
+    },
+    {
+        "id": 25,
+        "name": "Pokemon Ultra Sol",
+        "image": "/img/portadas/portadaPokemonUltraSol.jpg",
+        "status": "terminado",
+        "hoursPlayed": 42,
+        "tags": ["Pokemon", "RPG"]
+    },
+    {
+        "id": 26,
+        "name": "Pokemon Espada",
+        "image": "/img/portadas/portadaPokemonEspada.png",
+        "status": "terminado",
+        "hoursPlayed": 30,
+        "tags": ["Pokemon", "RPG"]
+    },
+    {
+        "id": 27,
+        "name": "Fina Fantasy XIV",
+        "image": "/img/portadas/portadaFinalFantasyXIV.jpg",
+        "status": "locura",
+        "hoursPlayed": 45,
+        "tags": ["Final Fantasy", "RPG", "MMO"]
+    },
+    {
+        "id": 28,
+        "name": "Dark Souls III",
+        "image": "/img/portadas/portadaDarkSoulsIII.jpg",
+        "status": "jugando",
+        "hoursPlayed": 9,
+        "tags": ["Souls Like", "RPG"]
     }
+
 ]

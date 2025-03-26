@@ -53,5 +53,27 @@ h1 {
   background-color: #0056b3;
 }
 
-/* Separador visual entre los botones y la lista */
+.tag-filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
 
+.tag-filter select {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: #fff;
+  width: 200px;
+}
+
+.tag-filter label {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #333;
+}
