@@ -262,5 +262,21 @@
         "status": "locura",
         "hoursPlayed": 18,
         "tags": ["Carreras"]
+    },
+    {
+        "id": 34,
+        "name": "Forza Horizon 5",
+        "image": "/img/portadas/portadaFH5.jpg",
+        "status": "locura",
+        "hoursPlayed": 8,
+        "tags": ["Carreras"]
+    },
+    {
+        "id": 35,
+        "name": "Lego Batman 3 Beyond Gotham",
+        "image": "/img/portadas/portadaLegoBatman3.jpg",
+        "status": "jugando",
+        "hoursPlayed": 8,
+        "tags": ["Lego", "RPG"]
     }
 ]
