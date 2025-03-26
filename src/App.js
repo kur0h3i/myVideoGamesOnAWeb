@@ -9,8 +9,19 @@ function App() {
   const [filter, setFilter] = useState('todos');
   const [tagFilter, setTagFilter] = useState('todos');  // Filtro por etiqueta
 
-  // Filtrar los juegos según el estado
-  const filteredGames = games.filter((game) => {
+  // Función para ordenar alfabéticamente, considerando los números de manera natural
+  const sortByName = (a, b) => {
+    const nameA = a.name.toLowerCase();
+    const nameB = b.name.toLowerCase();
+    
+    return nameA.localeCompare(nameB, undefined, { numeric: true });
+  };
+
+  // Ordenar los juegos alfabéticamente por nombre
+  const sortedGames = games.sort(sortByName);
+
+  // Filtrar los juegos según el estado (sin afectar el orden alfabético)
+  const filteredGames = sortedGames.filter((game) => {
     if (filter === 'jugando') {
       return game.status === 'jugando';
     } else if (filter === 'terminado') {
@@ -20,7 +31,7 @@ function App() {
     }
   });
 
-  // Asegúrate de que todos los juegos tengan un array de tags
+  // Filtrar los juegos según la etiqueta seleccionada
   const filteredByTag = filteredGames.filter((game) => {
     const tags = game.tags || []; // Si 'tags' no está definido, usar un array vacío
     if (tagFilter === 'todos') {
@@ -28,17 +39,6 @@ function App() {
     } else {
       return tags.includes(tagFilter); // Filtra por la etiqueta seleccionada
     }
-  });
-
-  // Ordenar los juegos alfabéticamente por nombre
-  const sortedGames = filteredByTag.sort((a, b) => {
-    if (a.name.toLowerCase() < b.name.toLowerCase()) {
-      return -1;
-    }
-    if (a.name.toLowerCase() > b.name.toLowerCase()) {
-      return 1;
-    }
-    return 0;
   });
 
   return (
@@ -65,6 +65,7 @@ function App() {
             <option value="Carreras">Carreras</option>
             <option value="Disney">Disney</option>
             <option value="Final Fantasy">Final Fantasy</option>
+            <option value="Indie">Indie</option>
             <option value="Kingdom Hearts">Kingdom Hearts</option>
             <option value="Pokemon">Pokémon</option>
             <option value="RPG">RPG</option>
@@ -76,7 +77,7 @@ function App() {
         <div className="filter-separator"></div>
 
         {/* Lista de juegos filtrados y ordenados */}
-        <GameList games={sortedGames} />
+        <GameList games={filteredByTag} />
       </div>
     </div>
   );

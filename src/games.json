@@ -25,7 +25,7 @@
     },
     {
         "id": 4,
-        "name": "Fina Fantasy XVI",
+        "name": "Final Fantasy XVI",
         "image": "/img/portadas/portadaFinalFantasyXVI.jpg",
         "status": "terminado",
         "hoursPlayed": 33,
@@ -209,7 +209,7 @@
     },
     {
         "id": 27,
-        "name": "Fina Fantasy XIV",
+        "name": "Final Fantasy XIV",
         "image": "/img/portadas/portadaFinalFantasyXIV.jpg",
         "status": "locura",
         "hoursPlayed": 45,
@@ -222,6 +222,45 @@
         "status": "jugando",
         "hoursPlayed": 9,
         "tags": ["Souls Like", "RPG"]
+    },
+    {
+        "id": 29,
+        "name": "Hollow Knight",
+        "image": "/img/portadas/portadaHollowKnight.jpeg",
+        "status": "jugando",
+        "hoursPlayed": 11,
+        "tags": ["Indie", "RPG"]
+    },
+    {
+        "id": 30,
+        "name": "Final Fantasy VIII",
+        "image": "/img/portadas/portadaFinalFantasyVIII.jpg",
+        "status": "jugando",
+        "hoursPlayed": 2,
+        "tags": ["Final Fantasy", "RPG"]
+    },
+    {
+        "id": 31,
+        "name": "Final Fantasy VIX",
+        "image": "/img/portadas/portadaFinalFantasyIX.jpg",
+        "status": "jugando",
+        "hoursPlayed": 1,
+        "tags": ["Final Fantasy", "RPG"]
+    },
+    {
+        "id": 32,
+        "name": "Dirt Rally 2.0",
+        "image": "/img/portadas/portadaDirtRally2.jpg",
+        "status": "locura",
+        "hoursPlayed": 30,
+        "tags": ["Carreras"]
+    },
+    {
+        "id": 33,
+        "name": "EA SPORT WRC",
+        "image": "/img/portadas/portadaWRC.jpg",
+        "status": "locura",
+        "hoursPlayed": 18,
+        "tags": ["Carreras"]
     }
-
 ]
