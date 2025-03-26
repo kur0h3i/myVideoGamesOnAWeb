@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
 function Filters({ setFilter, setTagFilter, tagFilter }) {
   return (
     <div>
       {/* Filtro por estado */}
       <div className="filter-buttons">
-        <button onClick={() => setFilter('jugando')}>Jugando</button>
-        <button onClick={() => setFilter('terminado')}>Terminado</button>
-        <button onClick={() => setFilter('todos')}>Todos</button>
+        <button onClick={() => setFilter("jugando")}>Jugando</button>
+        <button onClick={() => setFilter("terminado")}>Terminado</button>
+        <button onClick={() => setFilter("todos")}>Todos</button>
       </div>
 
       {/* Filtro por etiquetas (usando un select dropdown) */}

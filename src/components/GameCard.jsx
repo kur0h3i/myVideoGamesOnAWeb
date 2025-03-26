@@ -1,54 +1,50 @@
 import React from "react";
-import '../style/GameCard.css';  // Asegúrate de que los estilos estén importados
+import "../style/GameCard.css"; // Asegúrate de que los estilos estén importados
 
 function GameCard({ game }) {
-  const { name, image, status, hoursPlayed, tags} = game;
+  const { name, image, status, hoursPlayed, tags } = game;
 
   // Determina la clase para el estado
-  let  statusClass = "";
+  let statusClass = "";
 
-  switch(status){
+  switch (status) {
     case "jugando":
-        statusClass = "status-jugando";
-        break;
+      statusClass = "status-jugando";
+      break;
     case "locura":
-        statusClass = "status-locura";
-        break;
+      statusClass = "status-locura";
+      break;
     case "terminado":
-        statusClass = "status-terminado";
-        break;
+      statusClass = "status-terminado";
+      break;
     default:
-        statusClass = "";
+      statusClass = "";
   }
 
   const renderStatus = () => {
     if (status === "jugando") {
       return (
         <div>
-            <p className={`status ${statusClass}`}> En proceso </p>
-            <p className="hours-played">{hoursPlayed}h</p>
+          <p className={`status ${statusClass}`}> En proceso </p>
+          <p className="hours-played">{hoursPlayed}h</p>
         </div>
       );
     } else if (status === "terminado") {
       return (
         <div>
-            <p className={`status ${statusClass}`}> Terminado </p>
-            <p className="hours-played">{hoursPlayed}h</p>
+          <p className={`status ${statusClass}`}> Terminado </p>
+          <p className="hours-played">{hoursPlayed}h</p>
         </div>
       );
-    } else if (status === "locura"){
-        return (
-            <div>
-            <p className={`status ${statusClass}`}> Locura </p>
-            <p className="hours-played-locura">{hoursPlayed}h</p>
-            </div>
-        );
-    } else {
+    } else if (status === "locura") {
       return (
-        <p className="status">
-          No jugado
-        </p>
+        <div>
+          <p className={`status ${statusClass}`}> Locura </p>
+          <p className="hours-played-locura">{hoursPlayed}h</p>
+        </div>
       );
+    } else {
+      return <p className="status">No jugado</p>;
     }
   };
 
