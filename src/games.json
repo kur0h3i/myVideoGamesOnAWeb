@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name": "Final Fantasy VII REMAKE INTEGRADE",
+        "image": "/img/portadas/portadaFinalFantasyVII.jpg",
+        "status" : "jugando",
+        "hoursPlayed": 30
+    },
+    {
+        "id": 2,
+        "name": "Kingdom Hearts",
+        "image": "/img/portadas/portadaKingdomHearts.jpg",
+        "status": "terminado",
+        "hoursPlayed": 15
+    },
+    {
+        "id": 3,
+        "name": "Cars 2",
+        "image": "/img/portadas/portadaCars2.jpg",
+        "status": "terminado",
+        "hoursPlayed": 5
+    },
+    {
+        "id": 4,
+        "name": "Fina Fantasy XVI",
+        "image": "/img/portadas/portadaFinalFantasyXVI.jpg",
+        "status": "terminado",
+        "hoursPlayed": 33
+    },
+    {
+        "id": 5,
+        "name": "Katana Zero",
+        "image": "/img/portadas/portadaKatanaZero.jpg",
+        "status": "terminado",
+        "hoursPlayed": 6
+    },
+    {
+        "id": 6,
+        "name": "Pokemon Blanco",
+        "image": "/img/portadas/portadaPokemonBlanco.jpeg",
+        "status": "terminado",
+        "hoursPlayed": 22
+    },
+    {
+        "id": 7,
+        "name": "Portal",
+        "image": "/img/portadas/portadaPortal.jpg",
+        "status": "terminado",
+        "hoursPlayed": 2
+    }
+]

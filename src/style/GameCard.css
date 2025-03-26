@@ -1,0 +1,109 @@
+/* GameCard.css */
+* {
+    color: #000000;
+}
+/* Contenedor de cada tarjeta de juego */
+.game-card {
+    border: 1px solid #000000; /* Borde ligero */
+    padding: 10px; /* Espaciado interno */
+    margin: 15px; /* Margen alrededor de cada tarjeta */
+    width: 250px;  /* Ancho fijo de la tarjeta */
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+    text-align: center; /* Centrar el contenido */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para efectos */
+  }
+  
+  /* Efecto al pasar el ratón (hover) */
+  .game-card:hover {
+    transform: translateY(-5px); /* Eleva la tarjeta cuando el ratón pasa por encima */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+  }
+  
+  /* Imagen del juego: Ajustar tamaño y estilo */
+  .game-card img {
+    width: 100%;  /* La imagen ocupa todo el ancho del contenedor */
+    height: 180px; /* Altura fija para la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra bien el espacio sin distorsionarse */
+    border-radius: 8px; /* Bordes redondeados en la imagen */
+    margin-bottom: 10px; /* Separación entre la imagen y el título */
+  }
+  
+  /* Título del juego */
+  .game-card h3 {
+    font-size: 1.3em; /* Tamaño de la fuente */
+    font-weight: bold; /* Hacer el título más destacado */
+    color: #333; /* Color oscuro */
+    margin-bottom: 10px; /* Separación entre el título y la descripción */
+  }
+  
+  /* Descripción del estado del juego */
+  .game-card p {
+    font-size: 1em;
+    margin: 5px 0; /* Separación entre los párrafos */
+  }
+  
+/* Estilos comunes para el texto de estado */
+.status {
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente */
+    margin-top: 10px;
+    font-style: italic; /* Cursiva para darle un estilo diferente */
+    display: inline-block;  /* Hacemos que el texto ocupe solo el espacio que necesita */
+    padding: 8px 20px;  /* Espaciado para que el texto tenga margen dentro del rectángulo */
+    border-radius: 15px;  /* Bordes redondeados */
+    text-align: center;  /* Centra el texto */  /* Hace que el texto sea negrita */
+    color: #000000; /* Color negro para el texto */
+  }
+  
+  /* Estilo para el estado "jugando" */
+  .status-jugando {
+    background-color: #007bff; /* Azul para el estado "jugando" */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.6); /* Sombra para darle más énfasis */
+  }
+  
+  /* Estilo para el estado "terminado" */
+  .status-terminado {
+    background-color: #28a745; /* Verde para el estado "terminado" */
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.6); /* Sombra para darle más énfasis */
+  }
+  
+  /* Estilo para el texto de las horas jugadas (sin cambios de color) */
+  .hours-played {
+    color: #000000; /* Color negro para las horas jugadas */
+    font-size: 1.2em;  /* Un tamaño de fuente ligeramente mayor */
+    margin-top: 5px;  /* Separación entre el estado y las horas jugadas */
+  }
+
+  
+  /* Estilo del contenedor de los juegos */
+  .game-list {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los juegos se distribuyan en varias filas */
+    justify-content: space-between; /* Espaciado uniforme entre las tarjetas */
+    gap: 20px; /* Espaciado entre cada tarjeta */
+    padding: 20px;
+  }
+  
+  /* GameCard.css */
+  
+  /* Estilo para la lista de juegos */
+  .game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  /* Otros estilos de la tarjeta de juego */
+  .game-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 15px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  

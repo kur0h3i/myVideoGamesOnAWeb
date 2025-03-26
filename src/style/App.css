@@ -1,0 +1,57 @@
+/* App.css */
+
+/* Asegura que no haya márgenes globales y un buen espaciado */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo general y estilo básico para la página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  display: flex;
+  flex-direction: column; /* Organiza todo de arriba a abajo */
+  justify-content: space-between; /* Empuja el contenido hacia arriba y el footer hacia abajo */
+  padding: 10px;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* Contenedor principal */
+.container {
+  flex-grow: 1; /* Permite que el contenido ocupe el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo para los botones de filtro */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.filter-buttons button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.filter-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* Separador visual entre los botones y la lista */
+

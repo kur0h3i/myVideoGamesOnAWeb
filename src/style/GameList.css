@@ -1,0 +1,11 @@
+/* GameList.css */
+
+/* Contenedor de la lista de juegos */
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Espaciado entre las tarjetas */
+    margin-top: 20px;
+  }
+  
