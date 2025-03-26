@@ -14,7 +14,7 @@ body {
   color: #333;
   display: flex;
   flex-direction: column; /* Organiza todo de arriba a abajo */
-  justify-content: space-between; /* Empuja el contenido hacia arriba y el footer hacia abajo */
+   /* Empuja el contenido hacia arriba y el footer hacia abajo */
   padding: 10px;
 }
 

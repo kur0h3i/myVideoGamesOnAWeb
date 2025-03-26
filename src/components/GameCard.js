@@ -5,7 +5,21 @@ function GameCard({ game }) {
   const { name, image, status, hoursPlayed } = game;
 
   // Determina la clase para el estado
-  const statusClass = status === "jugando" ? "status-jugando" : "status-terminado";
+  let  statusClass = "";
+
+  switch(status){
+    case "jugando":
+        statusClass = "status-jugando";
+        break;
+    case "locura":
+        statusClass = "status-locura";
+        break;
+    case "terminado":
+        statusClass = "status-terminado";
+        break;
+    default:
+        statusClass = "";
+  }
 
   const renderStatus = () => {
     if (status === "jugando") {
@@ -22,6 +36,13 @@ function GameCard({ game }) {
             <p className="hours-played">{hoursPlayed}h</p>
         </div>
       );
+    } else if (status === "locura"){
+        return (
+            <div>
+            <p className={`status ${statusClass}`}> Locura </p>
+            <p className="hours-played-locura">{hoursPlayed}h</p>
+            </div>
+        );
     } else {
       return (
         <p className="status">

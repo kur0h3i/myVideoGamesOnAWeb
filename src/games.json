@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Final Fantasy VII REMAKE INTEGRADE",
         "image": "/img/portadas/portadaFinalFantasyVII.jpg",
-        "status" : "jugando",
+        "status": "jugando",
         "hoursPlayed": 30
     },
     {
@@ -47,5 +47,75 @@
         "image": "/img/portadas/portadaPortal.jpg",
         "status": "terminado",
         "hoursPlayed": 2
+    },
+    {
+        "id": 8,
+        "name": "Elden Ring",
+        "image": "/img/portadas/portadaEldenRing.jpg",
+        "status": "jugando",
+        "hoursPlayed": 140
+    },
+    {
+        "id": 9,
+        "name": "Kingdom Hearts II",
+        "image": "/img/portadas/portadaKingdomHeartsII.png",
+        "status": "jugando",
+        "hoursPlayed": 19
+    },
+    {
+        "id": 10,
+        "name": "Sekiro",
+        "image": "/img/portadas/portadaSekiro.jpg",
+        "status": "jugando",
+        "hoursPlayed": 2
+    },
+    {
+        "id": 11,
+        "name": "Final Fantasy X",
+        "image": "/img/portadas/portadaFinalFantasyX.jpg",
+        "status": "jugando",
+        "hoursPlayed": 7
+    },
+    {
+        "id": 12,
+        "name": "Final Fantasy XII",
+        "image": "/img/portadas/portadaFinalFantasyXII.jpg",
+        "status": "jugando",
+        "hoursPlayed": 8
+    },
+    {
+        "id": 13,
+        "name": "League of Legends",
+        "image": "/img/portadas/portadaLol.jpg",
+        "status": "locura",
+        "hoursPlayed": 3416
+    },
+    {
+        "id": 14,
+        "name": "World of Warcraft",
+        "image": "/img/portadas/portadaWow.jpg",
+        "status": "locura",
+        "hoursPlayed": 210
+    },
+    {
+        "id": 15,
+        "name": "Dokkan Battle",
+        "image": "/img/portadas/portadaDokkanBattle.jpg",
+        "status": "locura",
+        "hoursPlayed": 6234
+    },
+    {
+        "id": 16,
+        "name": "Minecraft",
+        "image": "/img/portadas/portadaMinecraft.jpg",
+        "status": "locura",
+        "hoursPlayed": 5342
+    },
+    {
+        "id": 17,
+        "name": "Asseto Corsa",
+        "image": "/img/portadas/portadaadAssetoCorsa.jpg",
+        "status": "locura",
+        "hoursPlayed": 200
     }
 ]

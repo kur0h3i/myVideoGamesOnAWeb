@@ -67,6 +67,12 @@
     background-color: #28a745; /* Verde para el estado "terminado" */
     box-shadow: 0 0 10px rgba(40, 167, 69, 0.6); /* Sombra para darle más énfasis */
   }
+
+  .status-locura {
+    background-color: #fd0000; /* Verde para el estado "locura" */
+    box-shadow: 0 0 10px rgba(167, 70, 40, 0.6); /* Sombra para darle más énfasis */
+    font-weight: bolder;
+  }
   
   /* Estilo para el texto de las horas jugadas (sin cambios de color) */
   .hours-played {
@@ -75,12 +81,16 @@
     margin-top: 5px;  /* Separación entre el estado y las horas jugadas */
   }
 
+  .hours-played-locura {
+    font-size: 150% !important; 
+    font-weight: bolder;
+  }
+
   
   /* Estilo del contenedor de los juegos */
   .game-list {
     display: flex;
-    flex-wrap: wrap; /* Permite que los juegos se distribuyan en varias filas */
-    justify-content: space-between; /* Espaciado uniforme entre las tarjetas */
+    flex-wrap: wrap; /* Permite que los juegos se distribuyan en varias filas */ /* Espaciado uniforme entre las tarjetas */
     gap: 20px; /* Espaciado entre cada tarjeta */
     padding: 20px;
   }
@@ -91,7 +101,6 @@
   .game-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 20px;
   }
   

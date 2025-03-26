@@ -19,6 +19,17 @@ function App() {
     }
   });
 
+  // Ordenar los juegos alfabéticamente por nombre
+  const sortedGames = filteredGames.sort((a, b) => {
+    if (a.name.toLowerCase() < b.name.toLowerCase()) {
+      return -1;
+    }
+    if (a.name.toLowerCase() > b.name.toLowerCase()) {
+      return 1;
+    }
+    return 0;
+  });
+
   return (
     <div className='App'>
       <div className='container'>
@@ -35,7 +46,7 @@ function App() {
         <div className="filter-separator"></div>
 
         {/* Lista de juegos filtrados */}
-        <GameList games={filteredGames} />
+        <GameList games={sortedGames} />
         
       </div>
     </div>
