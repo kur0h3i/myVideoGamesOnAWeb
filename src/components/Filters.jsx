@@ -18,15 +18,15 @@ function Filters({ setFilter, setTagFilter, tagFilter, games }) {
     <div>
       {/* Filtro por estado */}
       <div className="filter-buttons">
-        <button onClick={() => setFilter("jugando")}>🎮 Jugando</button>
-        <button onClick={() => setFilter("terminado")}>✅ Terminado</button>
-        <button onClick={() => setFilter("locura")}>🔥 Locura</button>
-        <button onClick={() => setFilter("todos")}>📋 Todos</button>
+        <button onClick={() => setFilter("jugando")}>Jugando</button>
+        <button onClick={() => setFilter("terminado")}>Terminado</button>
+        <button onClick={() => setFilter("locura")}>Locura</button>
+        <button onClick={() => setFilter("todos")}>Todos</button>
       </div>
 
       {/* Filtro por etiquetas dinámico */}
       <div className="tag-filter">
-        <label htmlFor="tagSelect">🏷️ Filtrar por género</label>
+        <label htmlFor="tagSelect">Filtrar por etiqueta</label>
         <select
           id="tagSelect"
           value={tagFilter}

@@ -1,13 +1,22 @@
-/* GameList.css */
+/* GameList.css *//* GameList.css */
 
-/* Contenedor de la lista de juegos */
-.game-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 25px;
-  margin-top: 30px;
-  padding: 20px;
-  max-width: 1400px;
+
+
+/* Contenedor de la lista de juegos *//* Contenedor de la lista de juegos */
+
+.game-list {.game-list {
+
+  display: flex;  display: grid;
+
+  flex-wrap: wrap;  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+  justify-content: space-between;  gap: 25px;
+
+  gap: 20px;  margin-top: 30px;
+
+  margin-top: 20px;  padding: 20px;
+
+}  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
 }

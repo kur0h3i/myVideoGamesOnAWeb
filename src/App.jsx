@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1>🎮 Mi Biblioteca de Juegos</h1>
+        <h1>Mis Juegos</h1>
 
         <Filters
           setFilter={setFilter}
