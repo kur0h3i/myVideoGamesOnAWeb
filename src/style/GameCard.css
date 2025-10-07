@@ -1,118 +1,102 @@
 /* GameCard.css */
-* {
-    color: #000000;
-}
+
 /* Contenedor de cada tarjeta de juego */
 .game-card {
-    border: 1px solid #000000; /* Borde ligero */
-    padding: 10px; /* Espaciado interno */
-    margin: 15px; /* Margen alrededor de cada tarjeta */
-    width: 250px;  /* Ancho fijo de la tarjeta */
-    background-color: #fff; /* Fondo blanco */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
-    text-align: center; /* Centrar el contenido */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para efectos */
-  }
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 280px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
   
-  /* Efecto al pasar el ratón (hover) */
-  .game-card:hover {
-    transform: translateY(-5px); /* Eleva la tarjeta cuando el ratón pasa por encima */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
-  }
+/* Efecto al pasar el ratón (hover) */
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
   
-  /* Imagen del juego: Ajustar tamaño y estilo */
-  .game-card img {
-    width: 100%;  /* La imagen ocupa todo el ancho del contenedor */
-    height: 180px; /* Altura fija para la imagen */
-    object-fit: cover; /* Asegura que la imagen cubra bien el espacio sin distorsionarse */
-    border-radius: 8px; /* Bordes redondeados en la imagen */
-    margin-bottom: 10px; /* Separación entre la imagen y el título */
-  }
+/* Imagen del juego */
+.game-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
   
-  /* Título del juego */
-  .game-card h3 {
-    font-size: 1.3em; /* Tamaño de la fuente */
-    font-weight: bold; /* Hacer el título más destacado */
-    color: #333; /* Color oscuro */
-    margin-bottom: 10px; /* Separación entre el título y la descripción */
-  }
+/* Título del juego */
+.game-card h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    min-height: 2.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
   
-  /* Descripción del estado del juego */
-  .game-card p {
+/* Descripción del estado del juego */
+.game-card p {
     font-size: 1em;
-    margin: 5px 0; /* Separación entre los párrafos */
-  }
+    margin: 5px 0;
+}
   
 /* Estilos comunes para el texto de estado */
 .status {
-    font-size: 1.2em; /* Aumenta el tamaño de la fuente */
+    font-size: 1em;
     margin-top: 10px;
-    font-style: italic; /* Cursiva para darle un estilo diferente */
-    display: inline-block;  /* Hacemos que el texto ocupe solo el espacio que necesita */
-    padding: 8px 20px;  /* Espaciado para que el texto tenga margen dentro del rectángulo */
-    border-radius: 15px;  /* Bordes redondeados */
-    text-align: center;  /* Centra el texto */  /* Hace que el texto sea negrita */
-    color: #000000; /* Color negro para el texto */
-  }
-  
-  /* Estilo para el estado "jugando" */
-  .status-jugando {
-    background-color: #007bff; /* Azul para el estado "jugando" */
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.6); /* Sombra para darle más énfasis */
-  }
-  
-  /* Estilo para el estado "terminado" */
-  .status-terminado {
-    background-color: #28a745; /* Verde para el estado "terminado" */
-    box-shadow: 0 0 10px rgba(40, 167, 69, 0.6); /* Sombra para darle más énfasis */
-  }
-
-  .status-locura {
-    background-color: #fd0000; /* Verde para el estado "locura" */
-    box-shadow: 0 0 10px rgba(167, 70, 40, 0.6); /* Sombra para darle más énfasis */
-    font-weight: bolder;
-  }
-  
-  /* Estilo para el texto de las horas jugadas (sin cambios de color) */
-  .hours-played {
-    color: #000000; /* Color negro para las horas jugadas */
-    font-size: 1.2em;  /* Un tamaño de fuente ligeramente mayor */
-    margin-top: 5px;  /* Separación entre el estado y las horas jugadas */
-  }
-
-  .hours-played-locura {
-    font-size: 150% !important; 
-    font-weight: bolder;
-  }
-
-  
-  /* Estilo del contenedor de los juegos */
-  .game-list {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los juegos se distribuyan en varias filas */ /* Espaciado uniforme entre las tarjetas */
-    gap: 20px; /* Espaciado entre cada tarjeta */
-    padding: 20px;
-  }
-  
-  /* GameCard.css */
-  
-  /* Estilo para la lista de juegos */
-  .game-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  /* Otros estilos de la tarjeta de juego */
-  .game-card {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 15px;
-    width: 250px;
-    background-color: #fff;
-    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
+    color: white;
+    min-width: 80px;
+}
+  
+/* Estilo para el estado "jugando" */
+.status-jugando {
+    background-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+}
+  
+/* Estilo para el estado "terminado" */
+.status-terminado {
+    background-color: #28a745;
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+
+/* Estilo para el estado "locura" */
+.status-locura {
+    background-color: #dc3545;
+    box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+  
+/* Estilo para el texto de las horas jugadas */
+.hours-played {
+    color: #666;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.hours-played-locura {
+    color: #dc3545;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(220, 53, 69, 0.5);
+}
   

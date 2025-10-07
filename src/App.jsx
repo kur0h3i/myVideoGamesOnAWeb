@@ -7,7 +7,7 @@ import "./style/App.css";
 
 function App() {
   // Variables State
-  const [games, setGames] = useState(gamesData);
+  const [games] = useState(gamesData);
   const [filter, setFilter] = useState("todos");
   const [tagFilter, setTagFilter] = useState("todos");
 
@@ -38,13 +38,18 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1>Mis Juegos</h1>
+        <h1>🎮 Mi Biblioteca de Juegos</h1>
 
         <Filters
           setFilter={setFilter}
           setTagFilter={setTagFilter}
           tagFilter={tagFilter}
+          games={games}
         />
+
+        <div className="games-counter">
+          <p>Mostrando {filteredByTag.length} de {games.length} juegos</p>
+        </div>
 
         <GameList games={filteredByTag} />
       </div>

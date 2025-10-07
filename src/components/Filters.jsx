@@ -1,32 +1,41 @@
 import React from "react";
 
-function Filters({ setFilter, setTagFilter, tagFilter }) {
+function Filters({ setFilter, setTagFilter, tagFilter, games }) {
+  // Extraer todas las etiquetas únicas de los juegos
+  const getAllTags = () => {
+    const allTags = new Set();
+    games.forEach(game => {
+      if (game.tags) {
+        game.tags.forEach(tag => allTags.add(tag));
+      }
+    });
+    return Array.from(allTags).sort();
+  };
+
+  const uniqueTags = getAllTags();
+
   return (
     <div>
       {/* Filtro por estado */}
       <div className="filter-buttons">
-        <button onClick={() => setFilter("jugando")}>Jugando</button>
-        <button onClick={() => setFilter("terminado")}>Terminado</button>
-        <button onClick={() => setFilter("todos")}>Todos</button>
+        <button onClick={() => setFilter("jugando")}>🎮 Jugando</button>
+        <button onClick={() => setFilter("terminado")}>✅ Terminado</button>
+        <button onClick={() => setFilter("locura")}>🔥 Locura</button>
+        <button onClick={() => setFilter("todos")}>📋 Todos</button>
       </div>
 
-      {/* Filtro por etiquetas (usando un select dropdown) */}
+      {/* Filtro por etiquetas dinámico */}
       <div className="tag-filter">
-        <label htmlFor="tagSelect">Filtrar por etiqueta</label>
+        <label htmlFor="tagSelect">🏷️ Filtrar por género</label>
         <select
           id="tagSelect"
           value={tagFilter}
           onChange={(e) => setTagFilter(e.target.value)}
         >
-          <option value="todos">Todos</option>
-          <option value="Carreras">Carreras</option>
-          <option value="Disney">Disney</option>
-          <option value="Final Fantasy">Final Fantasy</option>
-          <option value="Indie">Indie</option>
-          <option value="Kingdom Hearts">Kingdom Hearts</option>
-          <option value="Pokemon">Pokémon</option>
-          <option value="RPG">RPG</option>
-          <option value="Souls Like">Souls Like</option>
+          <option value="todos">Todos los géneros</option>
+          {uniqueTags.map(tag => (
+            <option key={tag} value={tag}>{tag}</option>
+          ))}
         </select>
       </div>
 

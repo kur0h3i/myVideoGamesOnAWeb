@@ -2,7 +2,7 @@ import React from "react";
 import "../style/GameCard.css"; // Asegúrate de que los estilos estén importados
 
 function GameCard({ game }) {
-  const { name, image, status, hoursPlayed, tags } = game;
+  const { name, image, status, hoursPlayed } = game;
 
   // Determina la clase para el estado
   let statusClass = "";
@@ -50,7 +50,7 @@ function GameCard({ game }) {
 
   return (
     <div className="game-card">
-      <img src={image} alt={name} />
+      <img src={process.env.PUBLIC_URL + image} alt={name} />
       <h3>{name}</h3>
       {renderStatus()}
     </div>
